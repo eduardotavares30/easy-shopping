@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #5D5D7D;
+}
+
+.wrapper {
+    /* Estas configurações fará a caixa ocupar toda a tela do navegador, preenchendo todo o espaço horizontal e vertical / largura e altura */
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-left {
+    display: inline-block;
+    width: 60%;
+    padding-left: 136px;
+    margin-top: 20%;
+}
+
+h1 {
+    font-size: 70px;
+    line-height: 80px;
+    width: 368px;
+}
+
+p {
+    font-size: 28px;
+    line-height: 48px;
+    opacity: 0.6;
+    width: 540px;
+
+    /* Margem encima e embaixo, e nas laterias */
+    margin: 15px 0;
+}
+
+button {
+    width: 269px;
+    height: 62px;
+    background: #9499EA;
+    box-shadow: 0 10px 24px rgba (148, 153, 234, 0.0979959);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+
+    /* Letra dentro do botão */
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+.container-right {
+    display: inline-block;
+
+        /* Com esta configuração, tudo ficará transparente, porque o opacity será aplicado em tudo, e não somente na cor.
+        background: #5D5D7D;
+        opacity: 0.16;
+
+        Abaixo é a configuração certa, com o rgba podemos deixar a cor mais transparente, e vai de 0 a 1.
+
+        OBS: Não dá para colocar a cor transparente em HEXADECIMAL, somente em RGB.
+        */
+    background: rgba(93, 93, 125, 0.16);
+    height: 100vh; /* Para ocupar toda a tela verticalmente */
+    width: 40%; /* Como no container-left, o width já está em 60%, sobraram 40% para o container-right ocupar */
+    position: absolute;
+}
+
+header {
+    /* Margem no header em cima = 24px, direita = 0, embaixo = 0, esquerda = 57px */
+    margin: 24px 0 0 57px;
+}
+
+a {
+    font-size: 28px;
+    line-height: 41px;
+    cursor: pointer;
+
+    /* Todos os links terão a mesma margem à direita */
+    margin-right: 41px;
+}
+
+/* Pseudo classe
+Como há um grupo de links, usa-se a pseudo classe para selecionar o segundo link, e aplicará o estilo abaixo somente nele, os outros não serão alterados se nã forem selecionados
+*/
+a:nth-child(2) {
+    opacity: 0.4;
+}
+
+a:hover {
+    opacity: 0.4;
+}
+
+a:active {
+    opacity: 0.8;
+}
+
+figure {
+    position: relative;
+    top: 25%;
+    right: 130px;
+}
+
+/* Responsividade
+
+Por conta do estilo em Cascata do CSS, o media queries (Responsividade) tem que estar por último para não dá problemas. */
+@media screen and (max-width: 900px) {
+    .container-left {
+        width: 100%; /* Ocupará toda a largura da tela */
+        height: 50%; /* Ocupará metade da altura da tela */
+        padding: 0; /* Sem padding */
+        margin: 0; /* Sem margin */
+    }
+
+    h1 {
+        font-size: 36px; /* Diminuirá a fonte para se adaptar a tela */
+        line-height: 52px;
+        width: auto; /* A largura automaticamente se adaptará com a tela */
+        text-align: center;
+
+        /* Margin encima = 58px, laterais = 50px, e embaixo = 0 */
+        margin: 58px 50px 0;
+    }
+
+    p {
+        width: auto;
+        text-align: center;
+        font-size: 14px;
+        line-height: 24px;
+
+        /* Margin encima e embaixo = 15px, e nas laterais = 40px */
+        margin: 15px 40px;
+    }
+
+    /* Para alinhar o botão, será usando a margem, e só funcionará se o display estiver block */
+    button {
+        /* Margin encima e embaixo = 0, nas laterais = auto */
+        margin: 0 auto; /* Nas laterais alinhará automaticamente no centro */
+        display: block;
+    }
+
+    .container-right {
+        display: block; /* Desativará o display inline-block quando a tela estiver inferior a 900px. */
+        height: auto; /* Desativará os 100vh da altura já colocados, e deixará em auto e se adaptará ao tamanho da tela */
+        width: 100%; /* Ocupará toda a largura da tela */
+        position: static; /* Antes estava absolute, agora ficará no padrão, static */
+        padding: 40px;
+    }
+
+    header {
+        display: none;  /* O menu desaperecerá. */
+    }
+
+    figure {
+        max-width: 90%; /* Sua largura máxima será de 90% da tela */
+        position: static; /* Sua configuração anterior era relative, com as propriedades (top e right) já colocadas. E mudando para o static, desativará as propriedades e o position ficará no padrão. */
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .container-left {
+        height: 70%;
+    }
+}
