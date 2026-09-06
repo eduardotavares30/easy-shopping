@@ -166,6 +166,11 @@ Por conta do estilo em Cascata do CSS, o media queries (Responsividade) tem que 
         max-width: 90%; /* Sua largura máxima será de 90% da tela */
         position: static; /* Sua configuração anterior era relative, com as propriedades (top e right) já colocadas. E mudando para o static, desativará as propriedades e o position ficará no padrão. */
     }
+
+    img {
+        display: block;
+        margin: 0 auto; /* Alinhamento automático no centro */
+    }
 }
 
 @media screen and (max-width: 330px) {
