@@ -153,7 +153,7 @@ Por conta do estilo em Cascata do CSS, o media queries (Responsividade) tem que 
 
     .container-right {
         display: block; /* Desativará o display inline-block quando a tela estiver inferior a 900px. */
-        height: 100%; /* Desativará os 100vh da altura já colocados, e deixará em auto e se adaptará ao tamanho da tela */
+        height: 62vh; /* Desativará os 100vh da altura já colocados, e deixará em auto e se adaptará ao tamanho da tela */
         width: 100%; /* Ocupará toda a largura da tela */
         position: static; /* Antes estava absolute, agora ficará no padrão, static */
         padding: 40px;
