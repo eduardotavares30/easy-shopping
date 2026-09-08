@@ -171,6 +171,7 @@ Por conta do estilo em Cascata do CSS, o media queries (Responsividade) tem que 
     img {
         display: block;
         margin: 0 auto; /* Alinhamento automático no centro */
+        width: 100%; /* A largura da imagem ocupará toda a tela */
     }
 }
 
