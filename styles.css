@@ -120,8 +120,8 @@ Por conta do estilo em Cascata do CSS, o media queries (Responsividade) tem que 
         width: 100%; /* Ocupará toda a largura da tela */
         height: 30%; /* Ocupará metade da altura da tela */
         padding: 0; /* Sem padding */
-        margin: 0; /* Sem margin */
         margin-top: 0; /* Sem margin superior */
+        margin-bottom: 65px;
     }
 
     h1 {
