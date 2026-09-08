@@ -9,8 +9,8 @@
 
 .wrapper {
     /* Estas configurações fará a caixa ocupar toda a tela do navegador, preenchendo todo o espaço horizontal e vertical / largura e altura */
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 
 .container-left {
@@ -72,7 +72,7 @@ button:active {
         OBS: Não dá para colocar a cor transparente em HEXADECIMAL, somente em RGB.
         */
     background: rgba(93, 93, 125, 0.16);
-    height: 100vh; /* Para ocupar toda a tela verticalmente */
+    height: 110vh; /* Para ocupar toda a tela verticalmente */
     width: 40%; /* Como no container-left, o width já está em 60%, sobraram 40% para o container-right ocupar */
     position: absolute;
 }
@@ -121,6 +121,7 @@ Por conta do estilo em Cascata do CSS, o media queries (Responsividade) tem que 
         height: 30%; /* Ocupará metade da altura da tela */
         padding: 0; /* Sem padding */
         margin: 0; /* Sem margin */
+        margin-top: 0; /* Sem margin superior */
     }
 
     h1 {
