@@ -1,18 +1,7 @@
-<h1>Easy Shopping Via Mobile</h1>
+<h2 align="center">Easy Shopping Via Moblie</h2>
 
-<br/>
-<br/>
+<br>
 
-<h2>Esse foi um projeto que aprendi nas aulas do <a href="https://aulas.devclub.com.br/">DevClub</a></h2>
-
-<br />
-
-<h2>Tecnologias Utilizadas</h2>
-  <p>- HTML</p>
-  <p>- CSS</p>
-
-<br />
-<br />
-<br />
-
-<img src="https://github.com/eduardotavares30/easy-shopping/blob/main/assets/Easy-shopping-desktop.png?raw=true" alt="desktop-image" />
+<div align="center">
+  <img src"">
+</div>
