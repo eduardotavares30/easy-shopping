@@ -3,5 +3,12 @@
 <br>
 
 <div align="center">
-  <img src="./assets/Easy-Shopping-mockup.png" alt="Apresentacao-site-desktop-mobile" width="1000px" height="1000px">
+  <img src="./assets/Easy-Shopping-mockup.png" alt="Apresentacao-site-desktop-mobile" width="1000px" height="1000px" />
+</div>
+
+<br>
+
+<div align="center">
+  <img src="./assets/html5.svg" alt="html5-badge" />
+  <img src="./assets/css.svg" alt="css-badge" />
 </div>
