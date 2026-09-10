@@ -9,6 +9,6 @@
 <br>
 
 <div align="center">
-  <img src="./assets/html5.svg" alt="html5-badge" />
-  <img src="./assets/css.svg" alt="css-badge" />
+  <img src="./assets/html5.svg" alt="html5-badge"/> &nbsp;&nbsp;&nbsp;
+  <img src="./assets/css.svg" alt="css-badge" /> &nbsp;&nbsp;&nbsp;
 </div>
